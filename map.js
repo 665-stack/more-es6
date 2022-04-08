@@ -19,6 +19,22 @@ for (const number of numbers) {
 }
 console.log('doubleItResult -- ', doubleItResult)
 
-// jodi number array er digit gulo k digun korte cai with shortcut code.
+// jodi number array er digit gulo k digun korte cai with map and call array function.
+//how the map works
+// 1. loop through each element
+// 2. result for each element will be stored in an array
 
+const output2 = numbers.map(doubleIt);
+console.log('output2 -- ', output2)
+// and if we don't call array function;
+const output3 = numbers.map(number => number * 2);
+console.log('output3 -- ', output3)
+// little shortcut then before
+const output4 = numbers.map(x => x * 2);
+console.log('output4 -- ', output4)
+
+
+// another example for using map
+const squares = numbers.map(x => x * x);
+console.log('squares -- ', squares)
 
