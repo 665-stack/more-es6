@@ -12,10 +12,16 @@ class Support {
         console.log(this.name, 'start a support session');
     }
 }
+class StudentCare {
+    name;
+    designation = 'Student Care Web Dev';
+    address = 'BD';
+    constructor(name, address) {
+        this.name = name;
+        this.address = address;
+    }
+
+}
 const amir = new Support('amir khan', 'Bangladesh');
 const alvi = new Support('Alvi Rahman', 'China')
 const shahin = new Support('Mahmodul Shahin', 'Bangladesh')
-amir.startSession();
-alvi.startSession();
-shahin.startSession();
-console.log(amir, alvi, shahin)
