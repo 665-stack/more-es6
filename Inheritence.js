@@ -20,7 +20,9 @@ class StudentCare {
         this.name = name;
         this.address = address;
     }
-
+    builARoutine(student) {
+        console.log(this.name, 'Build a routine for', student)
+    }
 }
 const amir = new Support('amir khan', 'Bangladesh');
 const alvi = new Support('Alvi Rahman', 'China')
