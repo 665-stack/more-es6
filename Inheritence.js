@@ -5,7 +5,6 @@
 // common class
 class TeamMember {
     name;
-    designation = 'Support Web Dev';
     address = 'BD';
     constructor(name, address) {
         this.name = name;
@@ -15,6 +14,7 @@ class TeamMember {
 // start a session
 class Support extends TeamMember {
     groupSupportTime;
+    designation = 'Support Web Dev';
     constructor(name, address, time) {
         super(name, address)
         this.groupSupportTime = time
@@ -30,6 +30,7 @@ console.log(amir)
 
 //  build a routine for student
 class StudentCare extends TeamMember {
+    designation = 'Care Web Dev';
     builARoutine(student) {
         console.log(this.name, 'Build a routine for', student)
     }
@@ -41,6 +42,7 @@ console.log(alia)
 // release app
 class NeptuneDev extends TeamMember {
     codeEditor;
+    designation = 'Neptune App Dev';
     constructor(name, address, editor) {
         super(name, address)
         this.codeEditor = editor;
@@ -51,4 +53,6 @@ class NeptuneDev extends TeamMember {
 }
 const rifat = new NeptuneDev('Rifat Chowdhury', 'Japan', 'Android Studio');
 rifat.releaseApp('1.4.5')
-console.log(rifat)
+console.log(rifat.name)
+
+// oporer code gulo te je, javaScript er akta object theke arek ta object e property gulo je shared hocce sheta akta chain er moddome kah kore , ar atakei propotypical chain / inheritence bole.
