@@ -1,6 +1,9 @@
 // akoi doroner onk gulo object make korar jonno class use kora hoy. 
 // class er bitore object er property gulo access korar jonno 'this' use kora hoy. 
-class Support {
+// ababe kono kicur jonno bar bar code repeat hocce, jeta thik na. Tai akta common class niye shetar bitor korte hove.
+
+// common class
+class TeamMember {
     name;
     designation = 'Support Web Dev';
     address = 'BD';
@@ -8,22 +11,44 @@ class Support {
         this.name = name;
         this.address = address;
     }
+}
+// start a session
+class Support extends TeamMember {
+    groupSupportTime;
+    constructor(name, address, time) {
+        super(name, address)
+        this.groupSupportTime = time
+    }
     startSession() {
         console.log(this.name, 'start a support session');
     }
 }
-class StudentCare {
-    name;
-    designation = 'Student Care Web Dev';
-    address = 'BD';
-    constructor(name, address) {
-        this.name = name;
-        this.address = address;
-    }
+const amir = new Support('amir khan', 'Bangladesh', 11);
+const alvi = new Support('Alvi Rahman', 'China', 9)
+const shahin = new Support('Mahmodul Shahin', 'Bangladesh', 4);
+console.log(amir)
+
+//  build a routine for student
+class StudentCare extends TeamMember {
     builARoutine(student) {
         console.log(this.name, 'Build a routine for', student)
     }
 }
-const amir = new Support('amir khan', 'Bangladesh');
-const alvi = new Support('Alvi Rahman', 'China')
-const shahin = new Support('Mahmodul Shahin', 'Bangladesh')
+const alia = new StudentCare('Alia Bhatt', 'Mumbai');
+alia.builARoutine('Mahmodul Shahin');
+console.log(alia)
+
+// release app
+class NeptuneDev extends TeamMember {
+    codeEditor;
+    constructor(name, address, editor) {
+        super(name, address)
+        this.codeEditor = editor;
+    }
+    releaseApp(version) {
+        console.log(this.name, 'release app version', version)
+    }
+}
+const rifat = new NeptuneDev('Rifat Chowdhury', 'Japan', 'Android Studio');
+rifat.releaseApp('1.4.5')
+console.log(rifat)
