@@ -45,3 +45,8 @@ const products = [
 const moneyLimit = products.find(product => product.price >= 5000);
 console.log('moneyLimit -- ', moneyLimit)
 //===============================
+// map() array er protity upadan er jonno function ke call kore and shob function er result ke akti noton array te niye reture kore.
+//for() array er protity upadan er jonno function ke call kore but kono kicu return kore na.
+//filter() array er protity upadan er modde jeta jeta shorto fullfill korbe tader ke notun akta array te rekhe sheta ke return kore. filter() array return kore.
+//find() array er protity upadan er modde prothome jeta shorto fullfill korbe shodu shetai return korbe. find() element return kore.
+//==================================
