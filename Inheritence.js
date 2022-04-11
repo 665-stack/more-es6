@@ -48,7 +48,7 @@ class NeptuneDev extends TeamMember {
         this.codeEditor = editor;
     }
     releaseApp(version) {
-        console.log(this.name, 'release app version', version)
+        console.lisog(this.name, 'release app version', version)
     }
 }
 const rifat = new NeptuneDev('Rifat Chowdhury', 'Japan', 'Android Studio');

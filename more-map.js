@@ -22,7 +22,10 @@ console.log('productPrices', productPrices)
 products.map(product => console.log(product.color))
 
 // forEach
-products.forEach(product => console.log(product.price))
+products.forEach(product => console.log(product.price));
+// another forEach examplee
+const sss = products.forEach(x => x.name);
+console.log('sss -- ', sss)
 
 
 

@@ -11,7 +11,7 @@ const fish = {
 // const address = fish.address;
 // const id = fish.id;
 
-// ager ta cilo oldschool sys. now new syst
+// ager ta cilo oldschool sys. now new syst..
 const { phone, price, color, id } = fish;
 console.log(phone, price, color, id);
 //======================
@@ -19,7 +19,8 @@ const company = {
     name: 'GP',
     ceo: { id: 1, name: "ajmol", favFood: 'burger' },
     web: {
-        work: 'website development', emloyee: 22,
+        work: 'website development',
+        emloyee: 22,
         framework: 'react',
         tech: {
             first: 'html',
