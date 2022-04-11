@@ -50,3 +50,42 @@ console.log('moneyLimit -- ', moneyLimit)
 //filter() array er protity upadan er modde jeta jeta shorto fullfill korbe tader ke notun akta array te rekhe sheta ke return kore. filter() array return kore.
 //find() array er protity upadan er modde prothome jeta shorto fullfill korbe shodu shetai return korbe. find() element return kore.
 //==================================
+const profile = {
+    id: 333,
+    name: 'Mahmodul Hasan Shahin',
+    phone: '01877830473',
+    address: 'Joydebpur',
+    work: 'It sector'
+}
+const { id, name, phone, address, work } = profile;
+console.log(name, work)
+//=================================
+const company = {
+    name: 'themeXpert',
+    ceo: { name: 'Mahmodul Shahin', gmail: 'mahmodulshahin665@gmail.com' },
+    sector: {
+        web: {
+            work1: 'web deb and management',
+            employee: '8',
+            framework: 'react',
+            tech: {
+                primary: 'js',
+                secondary: 'python'
+            }
+        },
+        marketing: {
+            work2: 'product marketing',
+            employee2: '15',
+            type: 'internet marketing'
+        }
+    }
+}
+const { primary } = company.sector.web.tech;
+console.log('primary -- ', primary)
+// ===============================
+function nums(num1, num2, num3 = 7) {
+    return num1 + num2 + num3;
+}
+const numsresult = nums(20, 10);
+console.log('numsresult -- ', numsresult)
+//================================
